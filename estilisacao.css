@@ -15,25 +15,84 @@
 }
 .cabecalho h1 {
     margin: 0;
+    margin-left: 5%;
     font-size: 5ex;
 }
-
 .cabecalho .botoes {
     padding: 10rem 3rem;
     cursor: pointer;
     font-size: 3ex;
     color: #000;
 }
-
-.img{
-    margin-top: 1rem;
-    size: 100%;
+.imagem{
+    position: relative;
     width: 100%;
-    bottom: 100%;
-
-    padding: 20px;
-    font-size: 18px;
 }
-.fundo .img{
-    position: fixed;
+.texto-img {
+    position: absolute; 
+    margin: 3%;
+}
+.img {
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+
+/* Posicionamento do menu */
+.menu-container {
+    position: relative;
+}
+
+#menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    margin-top: 2%; /* Posiciona o menu embaixo do botão "Sobre" */
+    left: 75%;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1; /* Garante que o menu esteja acima de outros elementos */
+}
+
+#menu li {
+    padding: 10px;
+}
+
+#menu li a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Esconder o menu inicialmente */
+.hidden {
+    display: none;
+}
+
+/* Exibir o menu quando o botão é clicado */
+.show {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+/* Estilos de destaque para os links */
+.botoes:hover,
+#menu a:hover {
+    font-weight: bold;
+}
+
+/* Estilos de ativação para os links clicados */
+.botoes.clicked,
+#menu a.clicked {
+    color: red; /* Cor de destaque */
+    font-size: 1.2em; /* Tamanho um pouco maior */
 }
