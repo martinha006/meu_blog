@@ -1,4 +1,10 @@
-.linha {
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+/*  */
+  .linha {
     margin-top: 2rem;
     width: 100%;
     height: 2px;
@@ -8,6 +14,7 @@
 .cabecalho {
     margin-top: 2rem;
     margin-left:3rem ;
+    margin-right: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,8 +22,12 @@
 }
 .cabecalho h1 {
     margin: 0;
-    margin-left: 5%;
+    margin-left: 7%;
     font-size: 5ex;
+}
+.subtitulo{
+  margin-left: 5%;
+  text-decoration: underline;
 }
 .cabecalho .botoes {
     padding: 10rem 3rem;
@@ -24,49 +35,28 @@
     font-size: 3ex;
     color: #000;
 }
-.imagem{
-    position: relative;
-    width: 100%;
-}
-.texto-img {
-    position: absolute; 
-    margin: 3%;
-}
-.img {
-    margin-top: 1%;
-    margin-left: 2%;
-}
-
-
-/* Posicionamento do menu */
+/* MENU (SOBRE)*/
 .menu-container {
     position: relative;
 }
-
 #menu {
     list-style-type: none;
     padding: 0;
     margin: 0;
     position: absolute;
     margin-top: 2%; /* Posiciona o menu embaixo do botão "Sobre" */
-    left: 75%;
+    left: 70%;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    z-index: 1; /* Garante que o menu esteja acima de outros elementos */
+    z-index: 1; /*coloca o menu acima de outros elementos */
 }
-
 #menu li {
-    padding: 10px;
-}
-
-#menu li a {
+    padding: 1ex;
     color: #333;
-    text-decoration: none;
 }
 
-/* Esconder o menu inicialmente */
 .hidden {
     display: none;
 }
@@ -76,23 +66,64 @@
     display: block;
 }
 
-
-
-
-
-
-
-
-
 /* Estilos de destaque para os links */
-.botoes:hover,
-#menu a:hover {
+.botoes:hover, #menu a:hover {
     font-weight: bold;
 }
 
-/* Estilos de ativação para os links clicados */
-.botoes.clicked,
-#menu a.clicked {
+.botoes.clicked, #menu a.clicked {
     color: red; /* Cor de destaque */
     font-size: 1.2em; /* Tamanho um pouco maior */
 }
+/*  */
+
+  #imagem {
+    width: 90%;
+    margin-top: 5vh;
+    height: 50vh; /* 50% da altura da tela */
+    object-fit: cover;
+    align-items: center;
+  }
+
+  #imagem-bio {
+    width:20%;
+    height: 100%;
+    margin-left: 20rem;
+  }
+
+  #conteudo {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  #texto {
+    float: left;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    letter-spacing: 2px; /* Espaçamento entre letras */
+    line-height: 2; /* Espaçamento entre linhas */
+    text-align: justify;
+  }
+
+  .imagem-quadrada {
+    width: calc(11% - 0px);
+    margin-left: 43px;
+    display: flex; /* Alterado para usar flexbox */
+    float: left;
+  }
+  .container {
+    width: 95%;
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+
+  .imagem_parceria{
+    width: 100%;
+    display: block;
+    margin-left: 10rem;
+
+  }
+

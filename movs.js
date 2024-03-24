@@ -9,12 +9,6 @@ menuBtn.addEventListener('click', function() {
 });
 
 
-
-
-
-
-
-
 // Seleciona todos os links
 const links = document.querySelectorAll('.botoes, #menu a');
 

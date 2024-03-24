@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Blog</title>
-    <link rel="stylesheet" href="estilisacao.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilisacao.css">
+
+  <title>Layout com Imagens e Texto</title>
 </head>
-<body style="background-color: #f6f4f3;">
+<body>
     <div class="cabecalho">
         <h1>Meu Blog</h1>
         <div>
@@ -16,7 +17,7 @@
             <a href="parcerias.html" class="botoes" id="parcerias">Parcerias</a>
         </div>
     </div>
-    <div class="menu-container">
+    <div class="menu-container"> 
         <ul id="menu" class="hidden">
             <li><a href="bio.html" id="bio">BIOGRAFIA</a></li>
             <li><a href="dia.html" id="dia">DIA À DIA</a></li>
@@ -26,17 +27,29 @@
     </div>
     <div class="linha"></div>
 
-    
-    <div class="imagem">
-        <h3 class="texto-img">ACORDE.<br>PENSE.<br>EXISTA. </h3>
-        <div class="img">
-            <img src="imagens.img/img1.jpg">
-        </div>
+  <img id="imagem" src="imagens.img/img1.jpg">
+
+  <div id="conteudo">
+    <div id="texto">
+      <p>A Poesia é um texto poético, geralmente em verso, que faz parte do gênero literário
+        denominado "lírico". Ela combina palavras, significados e qualidades estéticas.
+        Nela, prevalece a estética da língua sobre o conteúdo, de forma que utiliza de
+        diferentes dispositivos fonéticos, sintáticos e semânticos.</p>
     </div>
 
-    <!-- Menu -->
-os botoes coloridos estao com erro
-    
-    <script src="movs.js"></script> <!-- Seu script JavaScript -->
+    <div class="imagem-quadrada">
+      <img src="https://via.placeholder.com/200" alt="Imagem 1">
+    </div>
+
+    <div class="imagem-quadrada">
+      <img src="https://via.placeholder.com/200" alt="Imagem 2">
+    </div>
+
+    <div class="imagem-quadrada">
+      <img src="https://via.placeholder.com/200" alt="Imagem 3">
+    </div>
+  </div>
+
+  <script src="movs.js"></script>
 </body>
 </html>
