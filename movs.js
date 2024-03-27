@@ -24,3 +24,24 @@ links.forEach(link => {
     });
 });
 
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var paragrafo = document.getElementById("paragrafo");
+    var minCaracteres = 50;
+    var maxCaracteres = 200;
+  
+    paragrafo.addEventListener("input", function() {
+      var texto = paragrafo.textContent.trim();
+      var textoLength = texto.length;
+  
+      if (textoLength < minCaracteres) {
+        paragrafo.classList.add("texto-curto");
+      } else if (textoLength > maxCaracteres) {
+        paragrafo.classList.add("texto-longo");
+      } else {
+        paragrafo.classList.remove("texto-curto", "texto-longo");
+      }
+    });
+  });
+  
