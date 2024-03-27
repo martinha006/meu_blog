@@ -21,6 +21,9 @@ body {
   align-items: center;
   color: #000000;
 }
+#cabecalho{
+  position: fixed;
+}
 .cabecalho h1 {
   margin: 0;
   margin-left: 7%;
@@ -57,26 +60,21 @@ body {
   padding: 1ex;
   color: #333;
 }
-
 .hidden {
   display: none;
 }
-
-/* Exibir o menu quando o botão é clicado */
 .show {
   display: block;
 }
-
-/* Estilos de destaque para os links */
 .botoes:hover, #menu a:hover {
   font-weight: bold;
 }
 
 .botoes.clicked, #menu a.clicked {
   color: red; /* Cor de destaque */
-  font-size: 1.2em; /* Tamanho um pouco maior */
+  font-size: 1.2em; /* deixa a letra um pouco maior */
 }
-/*  */
+/*FIM DO MENU*/
 
 #imagem {
   width: 90%;
@@ -110,7 +108,7 @@ body {
 
 .imagem-quadrada {
   width: calc(11.3% - 0px);
-  margin-left: 45px;
+  margin-left: 35px;
   display: flex;
   float: left;
 }
