@@ -1,48 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Blog</title>
-    <link rel="stylesheet" href="estilisacao.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="estilisacao.css">
+<title>Layout com Caixas</title>
 </head>
-<body style="background-color: #f6f4f3;">
-    <!--CABEÇALHO-->
+<body>
     <div class="cabecalho">
         <h1>Meu Blog</h1>
         <div>
-            <a href="index.html" class="botoes" id="inicio">Inicio</a>
+            <a href="index.html" class="botoes">Inicio</a>
             <a href="#" class="botoes" id="menu-btn">Sobre</a> <!-- Botão "Sobre" com id="menu-btn" -->
-            <a href="lembretes.html" class="botoes" id="lembretes">Lembretes</a>
-            <a href="parcerias.html" class="botoes" id="parcerias">Parcerias</a>
+            <a href="lembretes.html" class="botoes">Lembretes</a>
+            <a href="parcerias.html" class="botoes">Parcerias</a>
         </div>
     </div>
-    <!--MENU-->
-    <div class="menu-container"> 
+    <div class="menu-container">
         <ul id="menu" class="hidden">
-            <li><a href="bio.html" id="bio">BIOGRAFIA</a></li>
-            <li><a href="dia.html" id="dia">DIA À DIA</a></li>
-            <li><a href="pets.html" id="pets">MEUS PETS</a></li>
-            <li><a href="viagens.html" id="viagens">VIAGENS</a></li>
+            <li><a href="bio.html">BIOGRAFIA</a></li>
+            <li><a href="dia.html">DIA À DIA</a></li>
+            <li><a href="pets.html">MEUS PETS</a></li>
+            <li><a href="viagens.html">VIAGENS</a></li>
         </ul>
     </div>
     <div class="linha"></div>
-    <!--CONTEUDO DA PAGINA INICIAL-->
-    <div class="imagem">
-        <h3 class="texto-img">ACORDE.<br>PENSE.<br>EXISTA. </h3>
-        <div class="img">
-            <img src="imagens.img/img1.jpg">
-        </div>
+    <h1 class="subtitulo">Viagens</h1>
+
+
+<div class="container">
+  <div class="box">
+    <div class="box-content">
+      <h2>Título Normal</h2>
+      <div class="box-text">
+        <img src="https://via.placeholder.com/80" alt="Imagem">
+        <p>Texto pequeno ao lado da foto.</p>
+      </div>
+      <a href="#" class="box-button">Botão</a>
     </div>
-    <div class="textos">
-        <p>A Poesia é um texto poético, geralmente em verso, que faz parte do gênero literário
-            denominado "lírico". Ela combina palavras, significados e qualidades estéticas.
-            Nela, prevalece a estética da língua sobre o conteúdo, de forma que utiliza de
-            diferentes dispositivos fonéticos, sintáticos e semânticos.</p>
-        <div class="img">
-            <img src="imagens.img/img1.jpg">
-        </div>
+  </div>
+
+  <div class="box">
+    <div class="box-content">
+      <h2>Título Normal</h2>
+      <div class="box-text">
+        <img src="https://via.placeholder.com/80" alt="Imagem">
+        <p>Texto pequeno ao lado da foto.</p>
+      </div>
+      <a href="#" class="box-button">Botão</a>
     </div>
-    <script src="movs.js"></script>
+  </div>
+
+  <div class="box">
+    <div class="box-content">
+      <h2>Título Normal</h2>
+      <div class="box-text">
+        <img src="https://via.placeholder.com/80" alt="Imagem">
+        <p>Texto pequeno ao lado da foto.</p>
+      </div>
+      <a href="#" class="box-button">Botão</a>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>

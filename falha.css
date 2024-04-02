@@ -1,117 +1,62 @@
-.linha {
-    margin-top: 2rem;
-    width: 100%;
-    height: 2px;
-    background-color: #a07c6b;
-    font-family: montserrat;
-}
-.cabecalho {
-    margin-top: 2rem;
-    margin-left:3rem ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #000000;
-}
-.cabecalho h1 {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    margin-left: 5%;
-    font-size: 5ex;
-}
-.cabecalho .botoes {
-    padding: 10rem 3rem;
-    cursor: pointer;
-    font-size: 3ex;
-    color: #000;
-}
-.imagem{
-    position: relative;
-    width: 100%;
-}
-.texto-img {
-    position: absolute; 
-    margin-top: 1%;
-    margin-left: 2%;
-    display: flex;
-
-}
-.img {
-    margin-top: 1%;
-    margin-left: 20%;
-    display: flex; /* Alterado para usar flexbox */
-    flex-wrap: wrap;
-    margin-right: 0%;
-
-}
-
-.textos{
-    margin-top: 7%;
-}
-
-
-
-
-.container {
-    width: 20%; /* Define a largura do contêiner para 50% do tamanho da janela de visualização */
-    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
-}
-
-.imagem-redimensionada {
-    height: auto; /* Mantém a proporção da imagem */
-    max-width: 100px; /* Define a largura máxima das imagens */
-    display: inline-block; /* Faz as imagens se comportarem como elementos em linha */
-    margin: 1%; /* Adiciona margem entre as imagens */
-}
-
-
-
-
-
-/* MENU (SOBRE)*/
-.menu-container {
-    position: relative;
-}
-
-#menu {
-    list-style-type: none;
     padding: 0;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  h1 {
     margin: 0;
-    position: absolute;
-    margin-top: 2%; /* Posiciona o menu embaixo do botão "Sobre" */
-    left: 75%;
+    font-size: 24px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .box {
+    width: 30%;
     background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    z-index: 1; /* Garante que o menu esteja acima de outros elementos */
-}
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
 
-#menu li {
-    padding: 1ex;
-    color: #333;
-}
+  .box-content {
+    padding: 20px;
+  }
 
-.hidden {
-    display: none;
-}
+  .box img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 80px;
+    height: auto;
+  }
 
-/* Exibir o menu quando o botão é clicado */
-.show {
+  .box-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .box-button {
     display: block;
-}
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    margin-top: 10px;
+  }
 
-/* Estilos de destaque para os links */
-.botoes:hover, #menu a:hover {
-    font-weight: bold;
-}
-
-.botoes.clicked, #menu a.clicked {
-    color: red; /* Cor de destaque */
-    font-size: 1.2em; /* Tamanho um pouco maior */
-}
-
-p{
-    max-width: 40%;
-    margin-left: 2%;
-    text-align:justify;
-}
+  .box-button:hover {
+    background-color: #555;
+  }
