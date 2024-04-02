@@ -1,43 +1,54 @@
-.cabecalho {
-    background-color: #333;
-    color: #e70000;
-    padding: 10px;
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .slide {
+    display: block;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0,0,0,0.5);
+    text-decoration: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  .text {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-}
-
-.cabecalho-conteudo {
-    display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-}
-
-.cabecalho-imagem {
-    margin-left: 20px; /* Espaçamento entre o texto e a imagem */
-}
-
-.inicio {
-    display: flex;
-}
-
-.corretor {
-    margin-top: 0%;
-}
-
-/* Estilos para o texto */
-#texto {
-    float: left;
-    width: 60%;
-    font-size: xx-large;
-}
-
-/* Estilos para a imagem */
-#imagem {
-    float: right;
-    width: 40%;
-}
-
-/* Estilos para o botão */
-#botao {
-    text-align: center;
-    margin-top: 20px;
-}
+  }
+  
