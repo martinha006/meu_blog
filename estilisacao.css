@@ -183,18 +183,28 @@ body {
 .box-text {
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: center;
 }
 
 .box-button {
-  display: block;
+  display: flex;
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 10px 0;
-  text-decoration: none;
   margin-top: 10px;
+  width: 15%;
+  height: 30%;
+  padding: 10px 40%;
+  border-radius: 30px;
+  align-items: center;
 }
 
 .box-button:hover {
   background-color: #555;
 }
+
+
+
+
+
+
