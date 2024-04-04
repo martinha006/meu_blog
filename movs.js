@@ -25,3 +25,26 @@ links.forEach(link => {
 });
 
 
+var slide = 1;
+slideShow(slide);
+
+// Função para avançar/retroceder os slides
+function plusSlides(n) {
+    slideShow(slide += n);
+}
+
+// Função para mostrar o slide atual
+function currentSlide(n) {
+    slideShow(slide = n);
+}
+
+function slideShow(n) {
+    var i;
+    var slides = document.getElementsByClassName("caixaSlides");
+    if (n > slides.length) {slide = 1}    
+    if (n < 1) {slide = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slides[slide-1].style.display = "block";  
+}
