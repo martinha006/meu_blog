@@ -3,25 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rodapé Simples</title>
-    <!-- <link rel="stylesheet" href="estilo.css"> -->
-<style>
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-</style>
-</head>
-<body>
+    <title>Meu Blog</title>
+    <link rel="stylesheet" href="estilisacao.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
-<div class="conteudo">
-      <div class="cabecalho">
+</head>
+<body style="background-color: #f6f4f3;">
+    <div class="cabecalho">
         <h1>Meu Blog</h1>
         <div>
             <a href="index.html" class="botoes">Inicio</a>
-            <a href="#" class="botoes" id="menu-btn">Sobre</a> <!-- Botão "Sobre" com id="menu-btn" -->
+            <a href="#" class="botoes" id="menu-btn">Sobre</a>
             <a href="lembretes.html" class="botoes">Lembretes</a>
             <a href="parcerias.html" class="botoes">Parcerias</a>
         </div>
@@ -35,36 +27,61 @@ footer {
         </ul>
     </div>
     <div class="linha"></div>
-    
-      <img id="imagem" src="imagens.img/img1.jpg">
-    
-      <div id="conteudo">
-        <div id="texto">
-          <p>A Poesia é um texto poético, geralmente em verso, que faz parte do gênero literário
-            denominado "lírico". Ela combina palavras, significados e qualidades estéticas.
-            Nela, prevalece a estética da língua sobre o conteúdo, de forma que utiliza de
-            diferentes dispositivos fonéticos, sintáticos e semânticos.</p>
-        </div>
-    
-        <div class="imagem-quadrada">
-          <img src="imagens.img/img4.jpg" alt="Imagem 1">
-        </div>
-    
-        <div class="imagem-quadrada">
-          <img src="imagens.img/img4.jpg" alt="Imagem 2">
-        </div>
-    
-        <div class="imagem-quadrada">
-          <img src="imagens.img/img4.jpg" alt="Imagem 3">
-        </div>
-      </div>
+    <h1 class="subtitulo">Lembretes</h1>
 
-    
-</div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="moldura" id="lembretesEsquerda">
+                <p style="position: relative;">Trancaram a porta?</p>
+            </div>
+            <div class="moldura" id="lembretesEsquerda">
+                <p style="position: relative;">O criador do Goku morreu no dia 01/03/2024. E isso foi mais marcante do que os eventos do dia das mulheres.</p>
+            </div>
+            <div class="moldura" id="lembretesEsquerda">
+                <p style="position: relative;">O maior erro é não tentar por medo de errar.</p>
+            </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="moldura slideshow-lembrete">
+                <div id="slideLembrete">
+                    <div class="caixaSlides" id="slideTexto">
+                        <p>Trancaram a porta?</p>
+                    </div>
+                    <div class="caixaSlides" id="slideTexto">
+                        <p>O criador do goku morreu no dia 01/03/2024. E isso foi mais marcante do que os eventos dos dia das mulheres.</p>
+                    </div>
+                    <div class="caixaSlides" id="slideTexto">
+                        <p>O maior erro é não tentar por medo de errar.</p>
+                    </div>
+                    <div class="caixaSlides" id="slideTexto">
+                        <p >bebam bastante água!</p>
+                    </div>
+                    <div class="caixaSlides" id="slideTexto">
+                        <p>não de apegue a algo que te faz mal, só porque as vezes te faz bem.</p>
+                    </div>
+                    <div class="caixaSlides" id="slideTexto">
+                        <p>O gigante na frente nunca será maior que o deus que abita em você.<br>1 joão 4:4</p>
+                    </div>
+                </div>
+                <button class="prev" onclick="plusSlides(-1)">❮</button>
+                <button class="next" onclick="plusSlides(1)">❯</button>
+            </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="moldura" id="lembretesDireita">
+                <p style="position: relative;">Trancaram a porta?</p>
+            </div>
+            <div class="moldura" id="lembretesDireita">
+                <p style="position: relative;">O criador do Goku morreu no dia 01/03/2024. E isso foi mais marcante do que os eventos do dia das mulheres.</p>
+            </div>
+            <div class="moldura" id="lembretesDireita">
+                <p style="position: relative;">O maior erro é não tentar por medo de errar.</p>
+            </div>
+        </div>
+    </div>
 
-<footer>
-    <p>&copy; 2024 - Todos os direitos reservados</p>
-</footer>
-
+    <script src="movs.js"></script>
 </body>
 </html>

@@ -122,17 +122,19 @@ body {
 }
 
 .moldura {
-  float: left;
-  width: 300px;
-  height: 300px;
-  background-color: #D1C8C1;
   display: flex;
+  float: left;
+  width: 350px;
+  height: 350px;
+  background-color: #D1C8C1;
   justify-content: center;
   align-items: center;
-  margin-left: calc(20% - 10rem);
+  margin-left: 10%;
   margin-top: 50px;
   margin-bottom: 50px;
   position: relative;
+  letter-spacing: 2px; /* Espaço entre letras */
+  font-size: large;
 }
 .moldura img {
   max-width: 80%;
@@ -143,47 +145,8 @@ body {
   bottom: 0;
   text-align: center;
   width: 100%;
-  color: #f9f9f9;
+  color: #000000;
 }
-
-#lembretes{
-  border-radius: 30px;
-  margin: 1%;
-  font-size: x-large;
-  width: 20%;
-  margin-bottom: 20px;
-  margin-left: 10%;
-  letter-spacing: 2px; /* Espaço entre letras */
-  line-height: 2; /* Espaço entre linhas */
-  text-align: center;
-}
-#slideLembrete{
-  float: left;
-  width: 400px;
-  height: 600px;
-  background-color: #D1C8C1;
-  display: flex;
-  margin-left: 30%;
-}
-#slideTexto{
-  border-radius: 30px;
-  font-size: x-large;
-  width: 50%;
-  margin-top: 30%;
-  margin-left: 15%;
-  letter-spacing: 2px; /* Espaço entre letras */
-  line-height: 2; /* Espaço entre linhas */
-  text-align: center;
-} 
-/* #tentativa{
-  border-radius: 30px;
-  font-size: x-large;
-  width: 70%;
-  align-items: center;
-  letter-spacing: 2px; /* Espaço entre letras *
-  line-height: 2; /* Espaço entre linhas *
-  text-align: center;
-} */
 
 /* VIAGENS */
 .box img {
@@ -219,12 +182,12 @@ body {
 
 
 .parcerias{
-  float: left;
-  width: 700px;
-  height: 700px;
-  background-color: #D1C8C1;
-  display: flex;
-  margin-left: 30%;
+  /* float: left; */
+  width: 600px;
+  height: 600px;
+  /* background-color: #D1C8C1; */
+  /* display: flex; */
+  margin: 2% 30%;
 }
 .parcerias img {
   max-width: 80%;
@@ -276,4 +239,3 @@ body {
 .next {
   right: 0;
 }
-
