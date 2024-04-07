@@ -4,15 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="estilisacao.css">
-<link rel="stylesheet" href="falha.css">
-<title>Layout com Caixas</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<title>Meu Blog</title>
 </head>
 <body>
     <div class="cabecalho">
         <h1>Meu Blog</h1>
         <div>
             <a href="index.html" class="botoes">Inicio</a>
-            <a href="#" class="botoes" id="menu-btn">Sobre</a> <!-- Botão "Sobre" com id="menu-btn" -->
+            <a href="#" class="botoes" id="menu-btn">Sobre</a>
             <a href="lembretes.html" class="botoes">Lembretes</a>
             <a href="parcerias.html" class="botoes">Parcerias</a>
         </div>
@@ -28,17 +28,146 @@
     <div class="linha"></div>
     <h1 class="subtitulo">Viagens</h1>
 
-
-    <div class="moldura"> <!--CAIXA VIAGEM-->
-      <div class="box-content">
-        <img src="imagens.img/img1.jpg" alt="Imagem" class="imagem">
-        <div class="box-text">
-          <p>Texto pequeno ao lado da foto.</p>
-          <a href="#" class="box-button">Botão</a>
+    <div class="moldura parcerias" id="moldura1">
+        <div class="slideshow-container">
+            <div class="caixaSlides">
+                <h2 class="tituloviagem">Rio de Janeiro - <br>RJ xx/xx/xxxx</h2>
+            </div>
+            <div class="caixaSlides">
+                <p id="lembrete"> O Rio de Janeiro, conhecido como "Cidade Maravilhosa", encanta com suas praias,
+                    paisagens deslumbrantes e rica cultura. Com ícones como o Cristo Redentor e o Pão de Açúcar,
+                    oferece vistas espetaculares. Sua música, dança e culinária expressam sua energia vibrante..</p>
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img1.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img6.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img7.jpg" alt="">
+            </div>
+            <button class="voltar" onclick="plusSlides(-1, 'moldura1')">❮</button>
+            <button class="frente" onclick="plusSlides(1, 'moldura1')">❯</button>
         </div>
-      </div>
     </div>
-
+    <div class="moldura parcerias" id="moldura2">
+        <div class="slideshow-container">
+            <div class="caixaSlides">
+                <h2 class="tituloviagem">Xique-Xique - <br>BA xx/xx/xxxx</h2>
+            </div>
+            <div class="caixaSlides">
+                <p id="lembrete"> O Rio de Janeiro, conhecido como "Cidade Maravilhosa", encanta com suas praias,
+                    paisagens deslumbrantes e rica cultura. Com ícones como o Cristo Redentor e o Pão de Açúcar,
+                    oferece vistas espetaculares. Sua música, dança e culinária expressam sua energia vibrante..</p>
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img2.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img6.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img4.jpg" alt="">
+            </div>
+            
+            <button class="voltar" onclick="plusSlides(-1, 'moldura2')">❮</button>
+            <button class="frente" onclick="plusSlides(1, 'moldura2')">❯</button>
+        </div>
+    </div>
+    <div class="moldura parcerias" id="moldura3">
+        <div class="slideshow-container">
+            <div class="caixaSlides">
+                <h2 class="tituloviagem">Salvador - BA xx/xx/xxxx</h2>
+            </div>
+            <div class="caixaSlides">
+                <p id="lembrete"> O Rio de Janeiro, conhecido como "Cidade Maravilhosa", encanta com suas praias,
+                    paisagens deslumbrantes e rica cultura. Com ícones como o Cristo Redentor e o Pão de Açúcar,
+                    oferece vistas espetaculares. Sua música, dança e culinária expressam sua energia vibrante..</p>
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img2.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img3.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img5.jpg" alt="">
+            </div>
+            <button class="voltar" onclick="plusSlides(-1, 'moldura3')">❮</button>
+            <button class="frente" onclick="plusSlides(1, 'moldura3')">❯</button>
+        </div>
+    </div>
+    <div class="moldura parcerias" id="moldura4">
+        <div class="slideshow-container">
+            <div class="caixaSlides">
+                <h2 class="tituloviagem">Manaus - AM xx/xx/xxxx</h2>
+            </div>
+            <div class="caixaSlides">
+                <p id="lembrete"> O Rio de Janeiro, conhecido como "Cidade Maravilhosa", encanta com suas praias,
+                    paisagens deslumbrantes e rica cultura. Com ícones como o Cristo Redentor e o Pão de Açúcar,
+                    oferece vistas espetaculares. Sua música, dança e culinária expressam sua energia vibrante..</p>
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img1.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img6.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img7.jpg" alt="">
+            </div>
+            <button class="voltar" onclick="plusSlides(-1, 'moldura4')">❮</button>
+            <button class="frente" onclick="plusSlides(1, 'moldura4')">❯</button>
+        </div>
+    </div>
+    <div class="moldura parcerias" id="moldura5">
+        <div class="slideshow-container">
+            <div class="caixaSlides">
+                <h2 class="tituloviagem">São Paulo - SP xx/xx/xxxx</h2>
+            </div>
+            <div class="caixaSlides">
+                <p id="lembrete"> O Rio de Janeiro, conhecido como "Cidade Maravilhosa", encanta com suas praias,
+                    paisagens deslumbrantes e rica cultura. Com ícones como o Cristo Redentor e o Pão de Açúcar,
+                    oferece vistas espetaculares. Sua música, dança e culinária expressam sua energia vibrante..</p>
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img2.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img6.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img4.jpg" alt="">
+            </div>
+            
+            <button class="voltar" onclick="plusSlides(-1, 'moldura5')">❮</button>
+            <button class="frente" onclick="plusSlides(1, 'moldura5')">❯</button>
+        </div>
+    </div>
+    <div class="moldura parcerias" id="moldura6">
+        <div class="slideshow-container">
+            <div class="caixaSlides">
+                <h2 class="tituloviagem">Palmas - TO xx/xx/xxxx</h2>
+            </div>
+            <div class="caixaSlides">
+                <p id="lembrete"> O Rio de Janeiro, conhecido como "Cidade Maravilhosa", encanta com suas praias,
+                    paisagens deslumbrantes e rica cultura. Com ícones como o Cristo Redentor e o Pão de Açúcar,
+                    oferece vistas espetaculares. Sua música, dança e culinária expressam sua energia vibrante..</p>
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img2.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img3.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img5.jpg" alt="">
+            </div>
+            <button class="voltar" onclick="plusSlides(-1, 'moldura6')">❮</button>
+            <button class="frente" onclick="plusSlides(1, 'moldura6')">❯</button>
+        </div>
+    </div>
 <script src="movs.js"></script>
 </body>
 </html>
