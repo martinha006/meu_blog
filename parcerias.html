@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Blog</title>
     <link rel="stylesheet" href="estilisacao.css">
-
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body style="background-color: #f6f4f3;">
     <div class="cabecalho">
@@ -26,25 +26,15 @@
         </ul>
     </div>
     <div class="linha"></div>
-    
     <h1 class="subtitulo">Parcerias</h1>
 
-    <div class="moldura parcerias">
+    <div class="moldura parcerias" id="moldura1">
         <div class="slideshow-container">
             <div class="caixaSlides">
-                <img src="imagens.img/img1.jpg" alt="">
+                <img src="imagens.img/img8.jpg" alt="">
             </div>
             <div class="caixaSlides">
-                <img src="imagens.img/img2.jpg" alt="">
-            </div>
-            <div class="caixaSlides">
-                <img src="imagens.img/img3.jpg" alt="">
-            </div>
-            <div class="caixaSlides">
-                <img src="imagens.img/img4.jpg" alt="">
-            </div>
-            <div class="caixaSlides">
-                <img src="imagens.img/img5.jpg" alt="">
+                <img src="imagens.img/img9.jpg" alt="">
             </div>
             <div class="caixaSlides">
                 <img src="imagens.img/img1.jpg" alt="">
@@ -52,19 +42,84 @@
             <div class="caixaSlides">
                 <img src="imagens.img/img2.jpg" alt="">
             </div>
-            <div class="caixaSlides">
-                <img src="imagens.img/img3.jpg" alt="">
-            </div>
-            <div class="caixaSlides">
-                <img src="imagens.img/img4.jpg" alt="">
-            </div>
-
-            <button class="prev" onclick="plusSlides(-1)">❮</button>
-            <button class="next" onclick="plusSlides(1)">❯</button>
+            <button class="voltar" onclick="plusSlides(-1, 'moldura1')">❮</button>
+            <button class="frente" onclick="plusSlides(1, 'moldura1')">❯</button>
         </div>
     </div>
 
-    <script src="movs.js"></script>
+    <div class="moldura parcerias" id="moldura2">
+        <div class="slideshow-container">
+            <div class="caixaSlides">
+                <img src="imagens.img/img8.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img3.jpg" alt="">
+            </div>
 
+            <button class="voltar" onclick="plusSlides(-1, 'moldura2')">❮</button>
+            <button class="frente" onclick="plusSlides(1, 'moldura2')">❯</button>
+        </div>
+    </div>
+
+    <div class="moldura parcerias" id="moldura3">
+        <div class="slideshow-container">
+            <div class="caixaSlides">
+                <img src="imagens.img/img8.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img4.jpg" alt="">
+            </div>
+
+            <button class="voltar" onclick="plusSlides(-1, 'moldura3')">❮</button>
+            <button class="frente" onclick="plusSlides(1, 'moldura3')">❯</button>
+        </div>
+    </div>
+    <div class="moldura parcerias" id="moldura4">
+        <div class="slideshow-container">
+            <div class="caixaSlides">
+                <img src="imagens.img/img8.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img9.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img1.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img2.jpg" alt="">
+            </div>
+            <button class="voltar" onclick="plusSlides(-1, 'moldura4')">❮</button>
+            <button class="frente" onclick="plusSlides(1, 'moldura4')">❯</button>
+        </div>
+    </div>
+
+    <div class="moldura parcerias" id="moldura5">
+        <div class="slideshow-container">
+            <div class="caixaSlides">
+                <img src="imagens.img/img8.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img3.jpg" alt="">
+            </div>
+
+            <button class="voltar" onclick="plusSlides(-1, 'moldura5')">❮</button>
+            <button class="frente" onclick="plusSlides(1, 'moldura5')">❯</button>
+        </div>
+    </div>
+
+    <div class="moldura parcerias" id="moldura6">
+        <div class="slideshow-container">
+            <div class="caixaSlides">
+                <img src="imagens.img/img8.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img4.jpg" alt="">
+            </div>
+
+            <button class="voltar" onclick="plusSlides(-1, 'moldura6')">❮</button>
+            <button class="frente" onclick="plusSlides(1, 'moldura6')">❯</button>
+        </div>
+    </div>
+    <script src="movs.js"></script>
 </body>
 </html>
