@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Blog</title>
     <link rel="stylesheet" href="estilisacao.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body style="background-color: #f6f4f3;">
     <div class="cabecalho">
@@ -25,27 +27,44 @@
         </ul>
     </div>
     <div class="linha"></div>
-    
     <h1 class="subtitulo">Biografia</h1>
 
-    <div id="conteudo">
-        <div id="texto">
-            <p>Ouviram do Ipiranga as margens plácidas De um povo heroico, o brado retumbante E o Sol da liberdade, em raios fúlgidos Brilhou no céu da pátria nesse instante
-                Se o penhor dessa igualdade Conseguimos conquistar com braço forte Em teu seio, ó liberdade Desafia o nosso peito a própria morte
-                Ó Pátria amada Idolatrada Salve! Salve! Brasil, um sonho intenso, um raio vívido De amor e de esperança, à terra desce
-                Se em teu formoso céu, risonho e límpido A imagem do Cruzeiro resplandece Gigante pela própria natureza És belo, és forte, impávido colosso
-                E o teu futuro espelha essa grandeza  Terra adorada Entre outras mil  És tu, Brasil  Ó Pátria amada! Dos filhos deste solo, és mãe gentil
-                Pátria amada, Brasil! Deitado eternamente em berço esplêndido Ao som do mar e à luz do céu profundo Fulguras, ó Brasil, florão da América
-                Iluminado ao Sol do Novo Mundo! Do que a terra mais garrida Teus risonhos, lindos campos têm mais flores Nossos bosques têm mais vida
-                Nossa vida, no teu seio, mais amores Ó Pátria amada Idolatrada Salve! Salve! Brasil, de amor eterno seja símbolo O lábaro que ostentas estrelado
-                E diga o verde-louro dessa flâmula Paz no futuro e glória no passado  Mas se ergues da justiça a clava forte Verás que um filho teu não foge à luta
-                Nem teme, quem te adora, a própria morte Terra adorada Entre outras mil És tu, Brasil Ó Pátria amada! Dos filhos deste solo, és mãe gentil Pátria amada, Brasil!
-            </p>
-        </div>
-        <img id="imagem-bio" src="imagens.img/img2.jpg" alt="Imagem">
-
+    <div id="texto">
+        <p class="textobio">Ouviram do Ipiranga as margens plácidas De um povo heroico, o brado retumbante E o Sol da liberdade, em raios fúlgidos Brilhou no céu da pátria nesse instante
+            Se o penhor dessa igualdade Conseguimos conquistar com braço forte Em teu seio, ó liberdade Desafia o nosso peito a própria morte
+            Ó Pátria amada Idolatrada Salve! Salve! Brasil, um sonho intenso, um raio vívido De amor e de esperança, à terra desce
+            Se em teu formoso céu, risonho e límpido A imagem do Cruzeiro resplandece Gigante pela própria natureza És belo, és forte, impávido colosso
+            E o teu futuro espelha essa grandeza  Terra adorada Entre outras mil  És tu, Brasil  Ó Pátria amada! Dos filhos deste solo, és mãe gentil
+            Pátria amada, Brasil! Deitado eternamente em berço esplêndido Ao som do mar e à luz do céu profundo Fulguras, ó Brasil, florão da América
+            Iluminado ao Sol do Novo Mundo! Do que a terra mais garrida Teus risonhos, lindos campos têm mais flores Nossos bosques têm mais vida
+            Nossa vida, no teu seio, mais amores Ó Pátria amada Idolatrada Salve! Salve! Brasil, de amor eterno seja símbolo O lábaro que ostentas estrelado
+            E diga o verde-louro dessa flâmula Paz no futuro e glória no passado  Mas se ergues da justiça a clava forte Verás que um filho teu não foge à luta
+            Nem teme, quem te adora, a própria morte Terra adorada Entre outras mil És tu, Brasil Ó Pátria amada! Dos filhos deste solo, és mãe gentil Pátria amada, Brasil!
+        </p>
     </div>
+    
+    <div class="moldura biografia" id="moldura1">
+        <div class="slideshow-container">
+            <div class="caixaSlides">
+                <img src="imagens.img/img1.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img2.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img3.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img4.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img5.jpg" alt="">
+            </div>
 
+            <button class="voltar" onclick="plusSlides(-1, 'moldura1')">❮</button>
+            <button class="frente" onclick="plusSlides(1, 'moldura1')">❯</button>
+        </div>
+    </div>
     <script src="movs.js"></script> <!-- Seu script JavaScript -->
 
 </body>
