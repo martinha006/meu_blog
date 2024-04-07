@@ -1,50 +1,52 @@
-// Seleciona o botão e o menu
 const menuBtn = document.getElementById('menu-btn');
 const menu = document.getElementById('menu');
 
-// Adiciona um evento de clique ao botão
 menuBtn.addEventListener('click', function() {
-    // Alterna a classe 'show' no menu
     menu.classList.toggle('show');
 });
 
 
-// Seleciona todos os links
-const links = document.querySelectorAll('.botoes, #menu a');
+// Função para inicializar as molduras
+function initializeSlides(id) {
+    const slideContainer = document.getElementById(id);
+    const slides = slideContainer.querySelectorAll('.caixaSlides');
+    let currentSlide = 0;
 
-// Adiciona um evento de clique a cada link
-links.forEach(link => {
-    link.addEventListener('click', function() {
-        // Remove a classe 'clicked' de todos os links
-        links.forEach(link => {
-            link.classList.remove('clicked');
+    // Função para mostrar um slide específico
+    function showSlide(index) {
+        if (index < 0) {
+            currentSlide = slides.length - 1;
+        } else if (index >= slides.length) {
+            currentSlide = 0;
+        } else {
+            currentSlide = index;
+        }
+
+        // Oculta todos os slides e mostra apenas o slide atual
+        slides.forEach((slide, i) => {
+            slide.style.display = i === currentSlide ? 'block' : 'none';
         });
-        // Adiciona a classe 'clicked' apenas ao link clicado
-        this.classList.add('clicked');
-    });
-});
-
-
-var slide = 1;
-slideShow(slide);
-
-// Função para avançar/retroceder os slides
-function plusSlides(n) {
-    slideShow(slide += n);
-}
-
-// Função para mostrar o slide atual
-function currentSlide(n) {
-    slideShow(slide = n);
-}
-
-function slideShow(n) {
-    var i;
-    var slides = document.getElementsByClassName("caixaSlides");
-    if (n > slides.length) {slide = 1}    
-    if (n < 1) {slide = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
     }
-    slides[slide-1].style.display = "block";  
+
+    // Evento de clique para avançar ou retroceder os slides
+    slideContainer.querySelector('.voltar').addEventListener('click', () => {
+        showSlide(currentSlide - 1);
+    });
+
+    slideContainer.querySelector('.frente').addEventListener('click', () => {
+        showSlide(currentSlide + 1);
+    });
+
+    // Mostra o primeiro slide ao inicializar
+    showSlide(0);
 }
+
+// Inicializa as molduras passando o ID de cada uma
+initializeSlides('moldura1');
+initializeSlides('moldura2');
+initializeSlides('moldura3');
+initializeSlides('moldura4');
+initializeSlides('moldura5');
+initializeSlides('moldura6');
+
+// Adicione mais inicializações conforme necessário para outras molduras
