@@ -85,3 +85,76 @@
     <script src="movs.js"></script>
 </body>
 </html>
+
+<!-- 
+    
+    <div class="moldura" id="vi1">
+        <div class="slideshow-container">
+            <div class="caixaSlides">
+                <h2 class="tituloviagem">salvsdor - ba xx/xx/xxxx</h2>
+            </div>
+            <div class="caixaSlides">
+                <p>bglairu rgrae rg WEG RG RETYHE5QYH3 AFHGQERYH ERTHERY 3</p>
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img3.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img4.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <img src="imagens.img/img3.jpg" alt="">
+            </div>
+            <div class="caixaSlides">
+                <p class="rating estrelacentro" id="estrela1">
+                    <input type="radio" id="star1_1" name="rating_1" value="1">
+                    <label for="star1_1">★</label>
+                    <input type="radio" id="star2_1" name="rating_1" value="2">
+                    <label for="star2_1">★</label>
+                    <input type="radio" id="star3_1" name="rating_1" value="3">
+                    <label for="star3_1">★</label>
+                    <input type="radio" id="star4_1" name="rating_1" value="4">
+                    <label for="star4_1">★</label>
+                    <input type="radio" id="star5_1" name="rating_1" value="5">
+                    <label for="star5_1">★</label>
+                </p>
+            </div>
+            <button class="prev" onclick="plusSlides(-1, 'vi1')">❮</button>
+            <button class="next" onclick="plusSlides(1, 'vi1')">❯</button>
+        </div>
+    </div>
+    
+    <script>
+    // Função para inicializar slides em todas as molduras
+    function initSlides(numMolduras) {
+        for (var i = 1; i <= numMolduras; i++) {
+            showSlides(1, 'vi' + i);
+        }
+    }
+
+    // Função para avançar ou retroceder os slides
+    function plusSlides(n, id) {
+        showSlides(slideIndex[id] += n, id);
+    }
+
+    // Função para mostrar o slide atual
+    function showSlides(n, id) {
+        var i;
+        var slides = document.getElementById(id).getElementsByClassName("caixaSlides");
+        if (n > slides.length) { slideIndex[id] = 1 }
+        if (n < 1) { slideIndex[id] = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex[id] - 1].style.display = "block";
+    }
+
+    // Inicializar variáveis e slides
+    var slideIndex = {};
+    var numMolduras = document.getElementsByClassName("moldura").length;
+
+    for (var i = 1; i <= numMolduras; i++) {
+        slideIndex['vi' + i] = 1;
+    }
+    initSlides(numMolduras);
+</script> -->
