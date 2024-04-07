@@ -1,9 +1,9 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #F6F4F3;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F6F4F3;
+}
   /*  */
   .linha {
     margin-top: 2rem;
@@ -353,4 +353,109 @@ body {
   line-height: 2; /* Espaço entre linhas  *
   text-align: justify;
   position: relative;
+} */
+
+/* VIAGENS */
+/* .box img {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  width: 80px;
+  height: auto;
+}
+
+.box-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.box-button {
+  display: flex;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+  width: 15%;
+  height: 30%;
+  padding: 10px 40%;
+  border-radius: 30px;
+  align-items: center;
+}
+
+.box-button:hover {
+  background-color: #555;
+} */
+
+/* .container {
+  width: 95%;
+  margin-top: 3%;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+} */
+
+/* #imagem-bio {
+  width:20%;
+  height: 100%;
+  margin-left: 15rem;
+} */
+
+/*    <div class="moldura" id="dia1">
+        <div class="conteudo">
+            <p id="textodia">&#9679; texto 1ghjkkkkk  kkkkkfffff ffffffffff fffcgkkkkk kkk</p>
+            <p id="texto2">Texto 2</p>
+            <p class="rating">
+                <input type="radio" id="star1_1" name="rating_1" value="1">
+                <label for="star1_1">★</label>
+                <input type="radio" id="star2_1" name="rating_1" value="2">
+                <label for="star2_1">★</label>
+                <input type="radio" id="star3_1" name="rating_1" value="3">
+                <label for="star3_1">★</label>
+                <input type="radio" id="star4_1" name="rating_1" value="4">
+                <label for="star4_1">★</label>
+                <input type="radio" id="star5_1" name="rating_1" value="5">
+                <label for="star5_1">★</label>
+            </p>
+        </div>
+    </div> 
+ */
+
+ 
+/* ESTRELAS *
+.rating {
+  margin-top: auto;
+}
+.rating input {
+  display: none;
+}
+.rating label {
+  font-size: 40px;
+  color: #000000;
+  cursor: pointer;
+}
+.rating input:checked ~ label {
+  color: #FFD700;
+}
+.rating {
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  text-align: center;
+  direction: rtl; /* Inverte a direção das estrelas *
+}
+.estrelacentro{
+  width: 80%;
+  margin-bottom: 40%;
+  margin-right: 50%;
+}
+
+/*FIM DAS ESTRELAS*/
+
+/* #dia{
+  width: 450px;
+  height: 300px;
+  left: 5%;
+  margin-left: 5%;
 } */
